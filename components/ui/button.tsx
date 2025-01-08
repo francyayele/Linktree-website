@@ -8,19 +8,11 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-<<<<<<< Updated upstream
         default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105",
         outline: "border border-input bg-background text-foreground hover:bg-accent hover:text-accent-foreground shadow-lg hover:shadow-xl transition-transform transform hover:scale-105",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105",
         ghost: "bg-transparent text-background hover:bg-accent/10 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105",
-=======
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
->>>>>>> Stashed changes
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

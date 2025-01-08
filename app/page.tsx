@@ -30,7 +30,6 @@ export default function Page() {
             HANNA NATE <Sparkles className="w-4 h-4" />
           </h1>
           <p className="text-sm text-gray-600 mt-1">
-<<<<<<< Updated upstream
             Interior designer, Home, Fashion, & Beauty!
           </p>
           
@@ -42,19 +41,6 @@ export default function Page() {
               <TikTokIcon />
             </a>
             <a href="https://www.amazon.com/shop/natyg" className="hover:opacity-80 text-black">
-=======
-            Interior Designer, Home, Fashion, & Beauty!
-          </p>
-          
-          <div className="flex gap-6 mt-4">
-            <a href="#" className="hover:opacity-80 text-black">
-              <Instagram className="w-6 h-6" />
-            </a>
-            <a href="#" className="hover:opacity-80 text-black">
-              <TikTokIcon />
-            </a>
-            <a href="#" className="hover:opacity-80 text-black">
->>>>>>> Stashed changes
               <ShoppingCart className="w-6 h-6" />
             </a>
           </div>
@@ -69,7 +55,7 @@ export default function Page() {
               className="object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent">
-              <p className="text-white text-sm">my amazon storefront</p>
+              
             </div>
             <Button
               variant="ghost"
@@ -83,7 +69,6 @@ export default function Page() {
         </Card>
 
         <div className="space-y-3">
-<<<<<<< Updated upstream
   {[
     { name: "Lemon8", link: "https://v.lemon8-app.com/s/OgFFcFwwf" },
     { name: "Instagram", link: "https://www.instagram.com/decordwellbyhana?igsh=cXdhenduZjdrcWp3&utm_source=qr" },
@@ -112,31 +97,6 @@ export default function Page() {
   </a>
 </div>
 
-=======
-          {[
-            "Shop my LTK",
-            "Instagram",
-            "TikTok",
-            "Hanna Interiors | INTERIOR DESIGNER"
-          ].map((text) => (
-            <Button
-              key={text}
-              variant="secondary"
-              className="w-full bg-white/80 hover:bg-white/90 text-black justify-between group relative backdrop-blur-sm"
-            >
-              <span>{text}</span>
-              <MoreVertical className="w-4 h-4 opacity-70" />
-            </Button>
-          ))}
-        </div>
-
-        <div className="mt-8 text-center">
-          <Button variant="outline" className="bg-white/90 backdrop-blur-sm">
-            <Trees className="w-4 h-4 mr-2" />
-            Join hannanate on Linktree
-          </Button>
-        </div>
->>>>>>> Stashed changes
       </div>
     </main>
   )
