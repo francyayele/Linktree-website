@@ -34,13 +34,13 @@ export default function Page() {
           </p>
           
           <div className="flex gap-6 mt-4">
-            <a href="#" className="hover:opacity-80 text-black">
+            <a href="https://www.instagram.com/decordwellbyhana?igsh=cXdhenduZjdrcWp3&utm_source=qr" className="hover:opacity-80 text-black">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="#" className="hover:opacity-80 text-black">
+            <a href="https://www.tiktok.com/@decordwellbyhana?_t=ZT-8su0cxBMBSN&_r=1" className="hover:opacity-80 text-black">
               <TikTokIcon />
             </a>
-            <a href="#" className="hover:opacity-80 text-black">
+            <a href="https://www.amazon.com/shop/natyg" className="hover:opacity-80 text-black">
               <ShoppingCart className="w-6 h-6" />
             </a>
           </div>
@@ -69,29 +69,34 @@ export default function Page() {
         </Card>
 
         <div className="space-y-3">
-          {[
-            "Shop my LTK",
-            "Instagram",
-            "TikTok",
-            "Hanna Interiors | INTERIOR DESIGNER"
-          ].map((text) => (
-            <Button
-              key={text}
-              variant="secondary"
-              className="w-full bg-white/80 hover:bg-white/90 text-black justify-between group relative backdrop-blur-sm"
-            >
-              <span>{text}</span>
-              <MoreVertical className="w-4 h-4 opacity-70" />
-            </Button>
-          ))}
-        </div>
+  {[
+    { name: "Lemon8", link: "https://v.lemon8-app.com/s/OgFFcFwwf" },
+    { name: "Instagram", link: "https://www.instagram.com/decordwellbyhana?igsh=cXdhenduZjdrcWp3&utm_source=qr" },
+    { name: "TikTok", link: "https://www.tiktok.com/@decordwellbyhana?_t=ZT-8su0cxBMBSN&_r=1" },
+    { name: "Hanna Interiors | INTERIOR DESIGNER", link: "https://hannainteriordesigns.netlify.app/" }
+  ].map(({ name, link }) => (
+    <a href={link} key={name} target="_blank" rel="noopener noreferrer">
+      <Button
+        variant="secondary"
+        className="w-full bg-white/80 hover:bg-white/90 text-black justify-between group relative backdrop-blur-sm"
+      >
+        <span>{name}</span>
+        <MoreVertical className="w-4 h-4 opacity-70" />
+      </Button>
+    </a>
+  ))}
+</div>
 
-        <div className="mt-8 text-center">
-          <Button variant="outline" className="bg-white/80 backdrop-blur-sm">
-            <Trees className="w-4 h-4 mr-2" />
-            Join hannanate on Linktree
-          </Button>
-        </div>
+
+<div className="mt-8 text-center">
+  <a href="https://linktr.ee/hannanate" target="_blank" rel="noopener noreferrer">
+    <Button variant="outline" className="bg-white/80 backdrop-blur-sm">
+      <Trees className="w-4 h-4 mr-2" />
+      Join hannanate on Linktree
+    </Button>
+  </a>
+</div>
+
       </div>
     </main>
   )
