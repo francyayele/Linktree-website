@@ -49,7 +49,7 @@ export default function Page() {
         <Card className="mb-4 overflow-hidden">
           <div className="relative aspect-video">
             <Image
-              src={profileImage}
+              src={"/assets/images/Pic.JPG"}
               alt="Fashion and lifestyle photo of Hanna"
               fill
               className="object-cover"
